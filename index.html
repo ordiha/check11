@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Truth</title>
+
+    <!-- Frame Configuration -->
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://i.imgur.com/5LMzFZk.jpeg" />
+    <meta property="og:image" content="https://i.imgur.com/5LMzFZk.jpeg" />
+
+    <!-- Button Configuration -->
+    <meta property="fc:frame:button:1" content="Reveal the Truth" />
+    <meta property="fc:frame:button:1:action" content="post" />
+    <meta property="fc:frame:post_url" content="data:text/plain,{}" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>What You Think You Are</h1>
+    <img src="https://i.imgur.com/5LMzFZk.jpeg" alt="What You Think You Are">
+    <form id="reveal-form">
+        <input type="text" id="user-input" placeholder="Enter your input" />
+        <button type="submit">Reveal the Truth</button>
+    </form>
+
+    <script>
+        document.getElementById('reveal-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get the input value
+            const inputValue = document.getElementById('user-input').value;
+
+            // Display the input value (or process it as needed)
+            alert('Your input was: ' + inputValue);
+
+            // Optionally handle the input further or perform other actions
+        });
+    </script>
+</body>
+</html>
